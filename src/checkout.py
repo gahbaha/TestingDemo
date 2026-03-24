@@ -10,7 +10,7 @@
 #    my cart is cleared, and I receive a confirmation."
 
 import cart
-import inventory
+# import inventory
 import orders
 
 
