@@ -30,4 +30,4 @@ jobs:
         run: pytest tests/ -v
 
       - name: Dependency scan
-        run: safety check -r requirements.txt
+        run: safety scan -r requirements.txt
