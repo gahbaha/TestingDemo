@@ -18,7 +18,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install pytest flake8 bandit
+        run: pip install pytest flake8 bandit safety
 
       - name: Security Check
         run: pip install bandit && bandit -r src/
@@ -28,3 +28,6 @@ jobs:
 
       - name: Test
         run: pytest tests/ -v
+
+      - name: Dependency scan
+        run: safety check -r requirements.txt
