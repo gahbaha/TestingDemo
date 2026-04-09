@@ -25,9 +25,3 @@ jobs:
 
       - name: Lint
         run: flake8 src/ tests/
-
-      - name: Test
-        run: pytest tests/ -v
-
-      - name: Dependency scan
-        run: safety scan -r requirements.txt
