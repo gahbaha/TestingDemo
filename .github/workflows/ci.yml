@@ -25,3 +25,6 @@ jobs:
 
       - name: Lint
         run: flake8 src/ tests/
+
+      - name: Dependency Check
+        run: pip install safety && safety check
