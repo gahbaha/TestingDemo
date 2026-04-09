@@ -20,6 +20,9 @@ jobs:
       - name: Install dependencies
         run: pip install pytest flake8 bandit
 
+      - name: Security Check
+        run: pip install bandit && bandit -r src/
+
       - name: Lint
         run: flake8 src/ tests/
 
