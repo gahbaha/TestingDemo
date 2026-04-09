@@ -13,6 +13,7 @@ import cart
 # import inventory
 import orders
 
+
 class CheckoutResult:
     def __init__(self, success: bool, message: str, order_ids: list = None, failures: list = None):
         self.success = success
