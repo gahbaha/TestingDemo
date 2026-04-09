@@ -3,6 +3,8 @@
 #
 # This is the FEATURE we will test in Step 2 (Feature/Functional Testing).
 # It coordinates cart, inventory, orders, and notifications to complete
+
+import os
 # a purchase from start to finish.
 #
 # From the user's perspective, the feature is:
